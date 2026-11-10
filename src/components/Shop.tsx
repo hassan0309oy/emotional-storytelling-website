@@ -115,7 +115,7 @@ export function Shop({ lang }: { lang: Lang }) {
       {/* TRUST */}
       <section className="mx-auto max-w-6xl px-5">
         <div className="reveal grid grid-cols-2 gap-4 rounded-3xl bg-card p-5 shadow-soft ring-1 ring-border md:grid-cols-5">
-          {x.trust.map((label, i) => { const I = trustIcons[i]; return (
+          {x.trust.map((label, i) => { const I = trustIcons[i] ?? Heart; return (
             <div key={label} className="flex items-center gap-3 text-left last:col-span-2 md:last:col-span-1">
               <I className="h-8 w-8 shrink-0 text-accent" />
               <span className="text-sm font-bold">{label}</span>
